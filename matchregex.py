@@ -1,24 +1,40 @@
 from __future__ import print_function
 import os
 import re
+import sys
 
-filetoread = "million_tags.txt"
-regexfile = "regexlist.txt"
-outputfile = "regexmatchedqueries2.txt"
+def main():
+	infilename = sys.argv[1]
+	matchregex(infilename)
 
-f = open(filetoread, "r")
-fregex = open(regexfile, "r")
-fop = open(outputfile, "w")
-regexmatchedtags = []
+def matchregex(infilename):		
+	infile = infilename
+	regexfile = "regexlist.txt"
+	outputfile = infilename[0:-4]+"_regex.txt"
 
-for line in fregex:
-	f.seek(0)
-	#print(line)
-	for hashtag in f:
-			m = re.match(line, hashtag)
-			if m:
-				#print(hashtag)
-				regexmatchedtags.append(hashtag)
+	f = open(infile, "r")
+	fregex = open(regexfile, "r")
+	fop = open(outputfile, "w")
+	regexmatchedtags = []
 
-for tag in regexmatchedtags:
-				fop.write(tag)
+	for line in fregex:
+		f.seek(0)
+		#print(line)
+		for hashtag in f:
+				m = re.match(line, hashtag)
+				if m:
+					#print(hashtag)
+					regexmatchedtags.append(hashtag)
+
+	regs = set(regexmatchedtags)
+
+	for tag in regs:
+					fop.write(tag)
+
+	fop.close()
+	f.close()
+	fregex.close()
+	os.rename(outputfile, infilename)
+
+if __name__=='__main__':
+				main()

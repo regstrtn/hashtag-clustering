@@ -26,3 +26,12 @@ waysto.*
 .*moviesthat.*
 world'?s(.*(est|worst)).*
 .*whypeople.*
+NN.*NNS.*goals
+NN.*NNS.*thoughts
+NN.*NNS.*tweets
+.*101.*
+.*curiosities.*
+.*insights.*
+.*reviews.*
+.*skills.*
+.*(pictures|pics).*
