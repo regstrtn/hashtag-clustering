@@ -13,3 +13,12 @@ A simple exact word matching algorithm to identify the cluster of the tag, using
 
 - `./wordnet_similarity.py`
 Identify the cluster the tag belongs to, using the dictionary and word similarity measures from wordnet. 
+
+----
+
+### References
+
+
+- [Stanford Dependency Parser] (http://nlp.stanford.edu/software/lex-parser.shtml)
+- [Princeton University "About WordNet." WordNet. Princeton University. 2010] (http://wordnet.princeton.edu)
+- [Wordsegment python module] (https://github.com/grantjenks/wordsegment)
