@@ -2,7 +2,8 @@
 ### Included in the code: 
 - Hashtag segmentation
 - Manually identified set of patterns for filtering query-type tags
-- Hand labeled dictionary of 6000 tags and their concept
+- Hand labeled dictionary of 6000 tags and their concepts
+- Test script for classifying new tags into respective clusters
 
 ### Usage instructions 
 - `/pattern_filter/filter_query_type_tags.py <hashtagfile>`
