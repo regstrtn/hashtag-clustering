@@ -6,7 +6,7 @@
 
 ### Usage instructions 
 - `/pattern_filter/filter_query_type_tags.py <hashtagfile>`
-Output: A file containing segmented query type tags identified in the original <hashtagfile>
+Outputs a file containing segmented query type tags identified in the original <hashtagfile>
 
 - `./benchmark_similarity.py`
 A simple exact word matching algorithm to identify the cluster of the tag, using the hand labeled dictionary.
