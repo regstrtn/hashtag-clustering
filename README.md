@@ -5,6 +5,11 @@
 - Hand labeled dictionary of 6000 tags and their concepts
 - Test script for classifying new tags into respective clusters
 
+### Requirements
+Need to have the following installed for the code to work correctly: 
+- Python 3.0, or higher
+- NLTK, along with wordnet
+
 ### Usage instructions 
 - `/pattern_filter/filter_query_type_tags.py <hashtagfile>`
 Outputs a file containing segmented query type tags identified in the original hashtag file. 
